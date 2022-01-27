@@ -1,4 +1,4 @@
-baseURL = "mantoubox.fun"
+baseURL = "/"
 languageCode = "en-us"
 title = "Mantou Box"
 themesDir = "themes"
