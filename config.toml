@@ -1,0 +1,64 @@
+baseURL = "mantoubox.fun"
+languageCode = "en-us"
+title = "Mantou Box"
+themesDir = "themes"
+theme = "hugo-whisper-theme"
+
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+
+[module]
+[module.hugoVersion]
+extended = true
+min = "0.55.0"
+
+# Controls how many words are printed in the content summary on the docs homepage.
+# See https://gohugo.io/content-management/summaries/
+summaryLength = 30
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Features"
+url = "/features/"
+weight = 2
+
+[[menu.main]]
+name = "Changelogs"
+url = "/changelogs/"
+weight = 3
+
+[[menu.main]]
+name = "Github"
+url = "https://github.com/infilos/mantou-box"
+weight = 4
+
+[params]
+mainSections = ["features", "changelogs"]
+google_analytics_id = ""
+homepage_button_link = '/features'
+homepage_button_text = 'Find Features'
+homepage_intro = 'Develop tools build for developer, support multiple platforms.'
+homepage_image = '/images/terminal.gif'
+
+## You can enable to add anchor links to header elements
+# enable_anchor_link = true
+
+[params.homepage_meta_tags]
+meta_description = "Develop tools build for developer, support multiple platforms."
+meta_og_title = "Mantou Box"
+meta_og_type = "website"
+meta_og_url = "https://mantoubox.fun"
+meta_og_image = "/images/mantou.png"
+meta_og_description = "Develop tools build for developer, support multiple platforms."
+meta_twitter_card = "summary"
+meta_twitter_site = "@infilos"
+meta_twitter_creator = "@infilos"
+
+[params.logo]
+mobile = "images/mantou-logo.svg"
+standard = "/images/mantou-logo.svg"
