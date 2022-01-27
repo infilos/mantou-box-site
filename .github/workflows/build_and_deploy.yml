@@ -16,14 +16,10 @@ jobs:
     name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v2
-        with:
-          submodules: recursive
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-      - name: Setup Docsy
-        run: git submodule update --init --recursive && sudo npm install -D --save autoprefixer && sudo npm install -D --save postcss-cli
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
