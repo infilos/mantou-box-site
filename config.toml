@@ -41,7 +41,7 @@ weight = 4
 mainSections = ["features", "changelogs"]
 google_analytics_id = ""
 homepage_button_link = '/features'
-homepage_button_text = 'Find Features'
+homepage_button_text = 'Features'
 homepage_intro = 'Develop tools build for developer, support multiple platforms.'
 homepage_image = '/images/terminal.gif'
 

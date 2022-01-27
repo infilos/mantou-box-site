@@ -2,13 +2,16 @@
 <html lang="en">
 
 <head>
+	{{ if eq (printf "%v" $.Site.BaseURL) "//localhost:1313/" }}
+	{{ else }}
 	<base href="https://mantoubox.fun">
+	{{ end }}
+	
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>{{ block "title" . }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{ block "meta_tags" . }}{{end}}
-	<!--  <link rel="icon" href="{{ "favicon.png" | absURL}}">-->
 
   {{ if .Site.IsServer }}
   {{ $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
@@ -20,8 +23,8 @@
 
   {{ block "header_css" . }}{{ end }}
 	
-	<link id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
 	<link rel="icon" href="/mantou-favicon.png">
+	<link id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
 </head>
 
 <body class='page {{ block "body_classes" . }}{{ end }}'>
