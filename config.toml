@@ -38,12 +38,12 @@ url = "https://github.com/infilos/mantou-box"
 weight = 4
 
 [params]
+google_analytics_id = "UA-123062585-1"
 mainSections = ["features", "changelogs"]
-google_analytics_id = ""
 homepage_button_link = '/features'
 homepage_button_text = 'Features'
 homepage_intro = 'Develop tools build for developer, support multiple platforms.'
-homepage_image = '/images/terminal.gif'
+homepage_image = '/images/mantou-main.png'
 
 ## You can enable to add anchor links to header elements
 # enable_anchor_link = true
